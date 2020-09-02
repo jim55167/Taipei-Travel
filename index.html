@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台北旅遊資訊網</title>
+    <script src="https://kit.fontawesome.com/36793e6c29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body class="body">
+    <button id="goTop" title="Go to top">Top</button>
+    <div class="wrap">
+        <!-- 頭部 -->
+        <div class="header">
+            <p class="title">台北旅遊資訊</p>
+            <div class="box">
+                <select id="chooseArea">
+                    <option value="請選擇區域"> - - 請選擇區域 - - </option>
+                    <option value="中正區">中正區</option>
+					<option value="大同區">大同區</option>
+					<option value="中山區">中山區</option>
+					<option value="松山區">松山區</option>
+					<option value="大安區">大安區</option>
+					<option value="萬華區">萬華區</option>
+					<option value="信義區">信義區</option>
+					<option value="士林區">士林區</option>
+					<option value="北投區">北投區</option>
+					<option value="內湖區">內湖區</option>
+					<option value="南港區">南港區</option>
+					<option value="文山區">文山區</option>
+                </select>
+            </div>
+            <div class="hot-region">
+                <h1>熱門行政區</h1>
+                <ul class="famousAreaLink">
+                    <li class="button" style="background: #8A82CC;"><a href ="#" data-famous="士林區" class="btn-title btn1">士林區</a></li>
+                    <li class="button" style="background: #FFA782;"><a href ="#" data-famous="信義區" class="btn-title btn2">信義區</a></li>
+                    <li class="button" style="background: #F5D105;"><a href ="#" data-famous="中山區" class="btn-title btn3">中山區</a></li>
+                    <li class="button" style="background: #559AC8;"><a href ="#" data-famous="內湖區" class="btn-title btn4">內湖區</a></li>
+                </ul>
+            </div>
+
+            <div class="line"></div>
+            <div class="img"><img src="https://img.onl/x2X2bk"></div>
+        </div>
+
+        <div class="nav">
+            <h2 class="areaName"></h2>
+            <ul class="list">
+                <!-- <li>
+                    <img src="http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960" class="bigimg">
+                    <h3>高雄願景館</h3>
+                    <h4>三民區</h4>
+                    <div class="sights">
+                        <div class="icon1">
+                            <img src="https://img.onl/2vQevr" >
+                            <span>周二至周日10:00-18:00，每周一公休</span>
+                        </div>
+                        <div class="icon2">
+                            <img src="https://img.onl/Cm3iKg" >
+                            <span>高雄市三民區</span>
+                        </div>
+                        <div class="icon3">
+                            <img src="https://img.onl/Llueut">
+                            <span>886-7-2363357</span>
+                        </div>
+                        <a href="" class="btn">景點介紹</a>
+                    </div>
+                </li> -->
+            </ul>           
+        </div>
+
+        <div class="footer">
+            <ul class="pagination" id="pageid"></ul>
+            <div class="from-data">
+                <h2>臺北旅遊網</h2>
+                <a href="https://admin.twtainan.net/">資料來源 : 臺北市政府</a>
+            </div>
+        </div>
+
+        <div class="screen">
+            <div class="view-box">
+                <div class="box">
+                    <div class="picture">
+                        <img src="https://unsplash.it/500/200" alt="" class="view-picture">
+                    </div>
+                    <h3 class="view-title">標題</h3>
+                    <p>
+                        <b>地區：</b>
+                        <span class="view-area"></span>
+                    </p>
+                    <p>
+                        <b>類型：</b>
+                        <span class="view-type"></span>
+                    </p>
+                    <p>
+                        <b>電話：</b>
+                        <span class="view-tel"></span>
+                    </p>
+                    <p>
+                        <b>地址：</b>
+                        <span class="view-address"></span>
+                    </p>
+                    <p>
+                        <b>捷運站：</b>
+                        <span class="view-mrt"></span>
+                    </p>
+                    <p>
+                        <b>開放時間：</b>
+                        <span class="view-time">
+                        </span>
+                    </p>
+                    <p>
+                        <b>景點資訊：</b>
+                        <p class="view-detail">
+                        </p>
+                    </p>
+                </div>
+                <div class="cancel">X</div>
+            </div>
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
+</body>
+
+</html>
