@@ -1,2 +1,2 @@
 "# Taipei-Travel" </br>
-靜態網頁：https://jim55167.github.io/Taipei-Travel/
+Git pages：https://jim55167.github.io/Taipei-Travel/
